@@ -1,0 +1,43 @@
+2025-09-04 20:26:05 [DEBUG][org.springframework.boot.availability.ApplicationAvailabilityBean][onApplicationEvent][77]-> Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-09-04 20:26:05 [DEBUG][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext][doClose][1060]-> Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@505fc5a4, started on Mon Sep 01 13:35:34 CST 2025
+2025-09-04 20:26:05 [DEBUG][org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver$DefaultResolver][logKeyFound][115]-> Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2025-09-04 20:26:05 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][stop][366]-> Stopping beans in phase 2147483647
+2025-09-04 20:26:05 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][lambda$doStop$3][239]-> Bean 'webServerGracefulShutdown' completed its stop procedure
+2025-09-04 20:26:05 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][stop][366]-> Stopping beans in phase 2147483646
+2025-09-04 20:26:05 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][lambda$doStop$3][239]-> Bean 'webServerStartStop' completed its stop procedure
+2025-09-04 20:26:05 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][stop][366]-> Stopping beans in phase -2147483647
+2025-09-04 20:26:05 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][lambda$doStop$3][239]-> Bean 'springBootLoggingLifecycle' completed its stop procedure
+2025-09-04 20:26:05 [DEBUG][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][shutdown][224]-> Shutting down ExecutorService 'taskScheduler'
+2025-09-04 20:26:05 [DEBUG][org.springframework.jmx.export.annotation.AnnotationMBeanExporter][destroy][452]-> Unregistering JMX-exposed beans on shutdown
+2025-09-04 20:26:05 [DEBUG][org.springframework.jmx.export.annotation.AnnotationMBeanExporter][unregisterBeans][186]-> Unregistering JMX-exposed beans
+2025-09-04 20:26:05 [DEBUG][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][shutdown][224]-> Shutting down ExecutorService 'applicationTaskExecutor'
+2025-09-04 20:26:05 [DEBUG][io.netty.handler.logging.LoggingHandler][log][145]-> [id: 0xb0de6eb3, L:/0:0:0:0:0:0:0:0:6061] INACTIVE
+2025-09-04 20:26:05 [DEBUG][io.netty.handler.logging.LoggingHandler][log][145]-> [id: 0xb0de6eb3, L:/0:0:0:0:0:0:0:0:6061] UNREGISTERED
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-6
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-13
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 3 thread-local buffer(s) from thread: redisson-netty-4-7
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-17
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-14
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-16
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 3 thread-local buffer(s) from thread: redisson-netty-4-15
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-4
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-11
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-2
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-8
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-12
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-3
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-20
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-18
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-10
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-19
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-22
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-23
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-24
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-9
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-5
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-21
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 3 thread-local buffer(s) from thread: redisson-netty-4-26
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 2 thread-local buffer(s) from thread: redisson-netty-4-25
+2025-09-04 20:26:05 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-09-04 20:26:05 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-09-04 20:26:05 [DEBUG][io.netty.buffer.PoolThreadCache][free][247]-> Freed 7 thread-local buffer(s) from thread: lettuce-nioEventLoop-9-1

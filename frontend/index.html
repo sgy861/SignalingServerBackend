@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyMeeting WebRTC Demo</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <div>
+          <h1>EasyMeeting WebRTC Demo</h1>
+          <p>基于现有后端 REST + WebSocket 信令的浏览器 P2P 音视频示例。</p>
+        </div>
+        <div class="server-config">
+          <label>
+            API Base
+            <input id="apiBase" value="/api" />
+          </label>
+          <label>
+            WS Base
+            <input id="wsBase" value="ws://localhost:6061" />
+          </label>
+        </div>
+      </header>
+
+      <main class="layout">
+        <aside class="sidebar">
+          <section class="card">
+            <h2>账号</h2>
+            <form id="registerForm" class="form-grid">
+              <input name="email" type="email" placeholder="注册邮箱" required />
+              <input name="nickName" type="text" placeholder="昵称" maxlength="20" required />
+              <input name="password" type="password" placeholder="密码" maxlength="20" required />
+              <button type="submit">注册</button>
+            </form>
+
+            <form id="loginForm" class="form-grid top-gap">
+              <input name="email" type="email" placeholder="登录邮箱" required />
+              <input name="password" type="password" placeholder="登录密码" maxlength="20" required />
+              <button type="submit">登录</button>
+            </form>
+
+            <div class="session-box top-gap">
+              <div><strong>当前用户：</strong><span id="sessionUser">未登录</span></div>
+              <div><strong>Token：</strong><span id="sessionToken">-</span></div>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>会议</h2>
+            <form id="createMeetingForm" class="form-grid">
+              <input name="meetingName" type="text" placeholder="会议名称" value="EasyMeeting Demo" maxlength="100" required />
+              <select name="meetingNoType">
+                <option value="0">个人会议号</option>
+                <option value="1">随机会议号</option>
+              </select>
+              <select name="joinType">
+                <option value="0">免密码</option>
+                <option value="1">密码加入</option>
+              </select>
+              <input name="joinPassword" type="text" placeholder="会议密码（可选）" maxlength="5" />
+              <button type="submit">创建会议并入会</button>
+            </form>
+
+            <form id="joinMeetingForm" class="form-grid top-gap">
+              <input name="meetingNo" type="text" placeholder="会议号" required />
+              <input name="nickName" type="text" placeholder="入会昵称（默认当前昵称）" maxlength="20" />
+              <input name="password" type="text" placeholder="会议密码（如有）" maxlength="5" />
+              <button type="submit">加入会议</button>
+            </form>
+
+            <div class="meeting-actions top-gap">
+              <button id="leaveBtn" type="button">退出会议</button>
+              <button id="finishBtn" type="button">结束会议</button>
+              <button id="mediaBtn" type="button">打开摄像头/麦克风</button>
+            </div>
+
+            <div class="session-box top-gap">
+              <div><strong>Meeting ID：</strong><span id="meetingId">-</span></div>
+              <div><strong>Meeting No：</strong><span id="meetingNo">-</span></div>
+              <div><strong>WS：</strong><span id="wsStatus">未连接</span></div>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>参会成员</h2>
+            <ul id="participantList" class="participant-list"></ul>
+          </section>
+        </aside>
+
+        <section class="content">
+          <section class="card">
+            <h2>视频流</h2>
+            <div class="video-grid" id="videoGrid">
+              <div class="video-tile">
+                <div class="video-title">本地视频</div>
+                <video id="localVideo" autoplay muted playsinline></video>
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="log-header">
+              <h2>日志</h2>
+              <button id="clearLogBtn" type="button">清空</button>
+            </div>
+            <pre id="logPanel" class="log-panel"></pre>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
